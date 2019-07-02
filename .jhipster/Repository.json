@@ -1,0 +1,24 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "stars",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "forks",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20190601054035",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "repository",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

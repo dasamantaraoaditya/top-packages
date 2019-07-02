@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "repository",
+            "otherEntityName": "repository",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20190601055136",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "packages",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

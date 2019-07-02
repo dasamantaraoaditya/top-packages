@@ -1,0 +1,31 @@
+
+<div *ngIf="packages">
+    <h2><span>Packages</span> {{packages.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span>Name</span></dt>
+        <dd>
+            <span>{{packages.name}}</span>
+        </dd>
+        <dt><span>Repository</span></dt>
+        <dd>
+            <div *ngIf="packages.repository">
+                <a [routerLink]="['/repository', packages.repository?.id]">{{packages.repository?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'packages/'+ packages.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span> Edit</span>
+    </button>
+</div>
